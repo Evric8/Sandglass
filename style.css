@@ -1,0 +1,132 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.item1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  background-color: white;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 3;
+  overflow: hidden;
+}
+
+.item2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  background-color: white;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  background: rgba(0, 0, 0, 0);
+  margin-top: 303px;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.item3 {
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  margin-left: 126.5px;
+  margin-top: 300px;
+  background-color: white;
+  z-index: 3;
+}
+
+.item4 {
+  position: absolute;
+  width: 310px;
+  height: 155px;
+  background-color: yellow;
+  margin-top: 150px;
+  border-radius: 0 0 200px 200px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.item5 {
+  position: absolute;
+  width: 310px;
+  height: 150px;
+  background-color: yellow;
+  margin-top: 460px;
+  border-radius: 0 0 50px 50px;
+}
+
+.item6 {
+  position: absolute;
+  width: 310px;
+  height: 150px;
+  background-color: white;
+  animation: top-item 4s ease;
+  z-index: 2;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.item7 {
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  margin-left: 126.5px;
+  margin-top: 150px;
+  background-color: yellow;
+  z-index: 3;
+  animation: center-item 7s ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.item8 {
+  position: absolute;
+  width: 310px;
+  height: 150px;
+  margin-top: 460px;
+  background-color: white;
+  animation: center-item2 4s ease;
+  z-index: 2;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes top-item {
+  100% {
+    margin-top: 150px;
+  }
+}
+@keyframes center-item {
+  0% {
+    height: 160px;
+  }
+  15% {
+    height: 300px;
+  }
+  25% {
+    height: 330px;
+  }
+  50% {
+    margin-top: 300px;
+    height: 306px;
+  }
+  100% {
+    margin-top: 470px;
+    height: 100px;
+  }
+}
+@keyframes center-item2 {
+  100% {
+    margin-top: 300px;
+  }
+}
